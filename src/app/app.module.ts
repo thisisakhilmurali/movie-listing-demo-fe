@@ -10,6 +10,10 @@ import { UserMovieComponentComponent } from './user-movie-component/user-movie-c
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminMovieComponentComponent } from './admin-movie-component/admin-movie-component.component';
 
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +22,15 @@ import { AdminMovieComponentComponent } from './admin-movie-component/admin-movi
     UserDashboardComponent,
     UserMovieComponentComponent,
     AdminDashboardComponent,
-    AdminMovieComponentComponent
+    AdminMovieComponentComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
