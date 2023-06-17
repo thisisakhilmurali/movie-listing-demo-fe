@@ -67,7 +67,7 @@
     height: 100vh;
     overflow: hidden;
     background-color: black;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     z-index: 0;
   }
 
@@ -331,11 +331,11 @@ button.btn-secondary{
   }
   
 <!------------------------>
-/* .container { 
+.container { 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1cm;
-} */
+}
 
 .movie-section {
   display: flex;
