@@ -1,0 +1,511 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+   
+  }
+  
+  .header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+ 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+ 
+  
+
+  .modal-content {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  /* .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) to control transparency */
+ 
+
+  #loginModal {
+    margin-top: 70px; 
+  }
+
+  #signupModal{
+    margin-top:70px ;
+  }
+
+<!------------->
+  
+.modal-header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+
+  .modal-body{
+    color: #fff;
+   
+  }
+
+
+  .modal-body .form-control {
+    padding: 5px;
+  }
+
+  
+  .nav.nav-tabs {
+    flex: 1;
+  }
+  
+  .nav.nav-tabs .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .nav.nav-tabs .nav-link {
+    width: 100%;
+  }
+  
+  .close {
+    margin-left: auto;
+    color: white;
+  }
+
+
+
+   .carousel-container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    transition: all 0.4s ease;
+    z-index: 0;
+  }
+
+
+
+
+
+
+  .carousel-item {
+    height: 100vh;
+    max-width: 100%;
+/*    
+    transition: transform 0.1s ease-in-out; */
+    
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+   max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+
+   --------------------
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item-next {
+    transform: translateX(100%);
+  }
+  
+  .carousel-item-prev {
+    transform: translateX(-100%);
+  }
+  
+  .carousel-item.active {
+    transform: translateX(0);
+  }
+  .carousel-item {
+    transition: opacity 0.1s ease-in-out;
+   opacity: 1;
+  }
+  
+  
+  
+  
+ 
+---------------------------
+body.modal-open .header,
+body.modal-open .search-bar,
+body.modal-open .logo,
+body.modal-open .login-button {
+  display: none;
+}
+
+
+---------------------------------
+.movie-section {
+  position: relative;
+
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+ 
+}
+
+.movie-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+
+.containers{
+  background-color: black;
+  /* margin-left: 0; */
+  margin-right: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+ */
+
+
+
+
+
+ .card {
+  flex: 0 0 auto;
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+
+------------------------
+
+
+
+
+
+-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.3s ease-in-out;
+
+ 
+}
+
+
+.card:hover .card-img-top {
+  transform: scale(1.0); /* Increase the size of the image on hover */
+  position: relative;
+  z-index: 1;
+
+}
+
+
+
+
+
+
+.card:hover {
+  transform: scale(1.1); /* Increase the size of the card on hover */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+  width:220px;
+}
+
+
+
+
+------------------------------------
+
+.scroll-arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust the value as per your desired distance from the right edge */
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url('../../assets/arrow.png'); /* Replace with the path to your arrow image */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+----------------------------------
+
+
+
+
+
+
+
+
+  
+ 
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  
+  .top-movies-button,
+  .new-release-button,
+  .login-button {
+    padding: 10px;
+    margin-left: 8px;
+    font-size: 12px;
+    background-color: #666569; 
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+    border-color: white;
+  }
+
+
+  .login-button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-right: 10px;
+    transform: translateY(-50%);
+    border-radius:7px ;
+    
+    
+  }
+
+  button.btn-primary {
+    background-color: #666569; 
+    color: white;
+    border-color: #fff;
+  }
+
+
+  .nav-tabs {
+    width: 100%;
+    display: flex;
+  }
+  
+  .nav-link {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  
+   
+  /* Search bar styles */
+  
+  .search-bar {
+    flex: 1;
+    display: flex;
+    padding: 2px 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .search-input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 10px;
+    background-color: #666569; 
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+button.btn-secondary{
+    padding: 10px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+
+  .dropdown-menu {
+    min-width: 150px; 
+    padding: 10px;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem; 
+    font-size: 14px; 
+  }
+
+
+
+  --------------------------------
+
+
+
+  .dropdown .btn-secondary {
+    padding: 10px;
+    width: 180px; /* Adjust width as needed */
+    margin-left: 20px;
+    background-color: #666569;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+  }
+  
+  /* .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  } */
+  
+  /* Styles for search by movie name */
+  .dropdown .btn-secondary.search-by-name {
+    background-color: #666569;
+  }
+  
+  .dropdown .btn-secondary.search-by-name::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    margin-left: 10px;
+  }
+  
+  /* Styles for search by date */
+  .dropdown .btn-secondary.search-by-date {
+    background-color: #333;
+  }
+  
+  .dropdown .btn-secondary.search-by-date::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    margin-left: 10px;
+  }
+
+
+
+
+
+  ----------------------------------
+
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    
+  }
+
+  .modal-dialog {
+    max-width: 400px;
+    margin: 30px auto;
+    max-height: 20px;
+   
+  }
+
+  .nav-tabs .nav-link.active {
+    background-color: #666569; 
+    color: #ffffff; 
+    
+  }
+
+  h5{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+<!------------------------>
+.container { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1cm;
+ 
+}
+
+.movie-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10%;
+  
+}
+
+.genre-heading {
+  margin-top: 40px;
+  margin-bottom: 10px;
+ margin-left: 15px;
+ color: white
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.card-title {
+  text-align: center;
+}

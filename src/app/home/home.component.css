@@ -154,7 +154,7 @@ body.modal-open .login-button {
 
 
 ---------------------------------
-/* .movie-section {
+.movie-section {
   position: relative;
 
   overflow-x: auto;
@@ -166,12 +166,17 @@ body.modal-open .login-button {
 .movie-container {
   display: flex;
   padding-bottom: 20px;
+
+  
 }
+
+
+
 
 
 .containers{
   background-color: black;
-  margin-left: 0;
+  /* margin-left: 0; */
   margin-right: 0;
   margin-top: 50px;
   margin-bottom: 0;
@@ -182,87 +187,29 @@ body.modal-open .login-button {
 
 
 
-/* .card {
-  flex: 0 0 auto;
+ .card {
+  /* flex: 0 0 auto;
   display: inline-block;
   margin: 10px;
   width: 200px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s; */
   overflow: hidden;
   position: relative;
-} */
 
-
-
-
-
----------------------------------------
-
-
-.containers {
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
 }
 
-.movie-section {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 10px;
-  padding-bottom: 10px;
-}
 
-.movie-container {
-  display: flex;
-  gap: 10px;
-  scroll-snap-align: center;
-}
 
-.card {
-  flex: 0 0 220px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
+------------------------
 
-.scroll-arrow-left,
-.scroll-arrow-right {
-  width: 30px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  cursor: pointer;
-  z-index: 1;
-}
 
-.scroll-arrow-left {
-  left: 0;
-}
 
-.scroll-arrow-right {
-  right: 0;
-}
 
-.scroll-arrow-left::before,
-.scroll-arrow-right::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform: rotate(-45deg);
-}
 
-.scroll-arrow-right::before {
-  transform: rotate(135deg);
-}
+-----------------------------
+
+
+
 
 
 
@@ -274,19 +221,24 @@ body.modal-open .login-button {
 -------------------------------------------
 
 .card-img-top {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 
   transition: transform 0.3s ease-in-out;
+ 
+  object-position: center;
 
  
 }
 
 
 .card:hover .card-img-top {
-  transform: scale(1.1); /* Increase the size of the image on hover */
+  object-fit:fill;
+  transform: scale(1.2); /* Increase the size of the image on hover */
   position: relative;
   z-index: 1;
+
 }
 
 
@@ -298,28 +250,13 @@ body.modal-open .login-button {
   transform: scale(1.1); /* Increase the size of the card on hover */
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
   width:220px;
+  overflow: hidden;
 }
 
 
 
 
 ------------------------------------
-
-.scroll-arrow-right {
-  position: absolute;
-  top: 50%;
-  right: 20px; /* Adjust the value as per your desired distance from the right edge */
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-image: url('../../assets/arrow.png'); /* Replace with the path to your arrow image */
-  background-size: cover;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
 
 
 
@@ -435,6 +372,66 @@ button.btn-secondary{
     font-size: 14px; 
   }
 
+
+
+  --------------------------------
+
+
+
+  .dropdown .btn-secondary {
+    padding: 10px;
+    width: 180px; /* Adjust width as needed */
+    margin-left: 20px;
+    background-color: #666569;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+  }
+  
+  /* .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  } */
+  
+  /* Styles for search by movie name */
+  .dropdown .btn-secondary.search-by-name {
+    background-color: #666569;
+  }
+  
+  .dropdown .btn-secondary.search-by-name::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    margin-left: 10px;
+  }
+  
+  /* Styles for search by date */
+  .dropdown .btn-secondary.search-by-date {
+    background-color: #333;
+  }
+  
+  .dropdown .btn-secondary.search-by-date::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    transform: rotate(45deg);
+    margin-left: 10px;
+  }
+
+
+
+
+
+  ----------------------------------
+
   
   /* Footer styles */
   .footer {
@@ -473,6 +470,7 @@ button.btn-secondary{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1cm;
+ 
 }
 
 .movie-section {
