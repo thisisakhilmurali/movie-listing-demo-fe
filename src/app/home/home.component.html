@@ -1,26 +1,31 @@
 <html>
   <body>
  <!-- Header -->
-<header class="header">
-  <div class="logo ">
-    <img src="img.png" >
-    
-  </div>
 
+  
+<header class="header">
+  <!-- <div class="logo">
+    <img src="../../assets/logo.png" width="80" height="100">
+  </div> -->
+  
+   
+  <!-- <div class="application-name">SCREEN SPOT</div> -->
 
  
   <!-- Search bar -->
 
   <div class="search-bar">
     <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+      <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Name
+      </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" id="search-by-date">Search by Date</a>
-        <a class="dropdown-item" href="#" id="search-by-name">Search by Name</a>
+        <a class="dropdown-item" href="#" id="search-by-date">Date</a>
+        <a class="dropdown-item" href="#" id="search-by-name">Name</a>
       </div>
     </div>
     <input type="text" class="search-input" id="search-input" placeholder="Search movie by Name">
-    <button class="search-button" id="search-button">Search</button>
+    <i class="bi bi-search" style="color: white;"></i>
   </div>
   <div >
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" routerLink="/login">Login</button>
@@ -51,7 +56,7 @@
               <a class="nav-link" data-toggle="tab" href="#signupTab">Sign Up</a>
             </li>
           </ul>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" routerLink="/home">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -117,7 +122,7 @@
 
   <!-- Carousel -->
   <div class="carousel-container">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -212,7 +217,7 @@
 
 
 
- 
+<!--  
   <h3 class="genre-heading"> Action</h3>
   <section class="movie-section">
     <div class="card">
@@ -384,7 +389,7 @@
 
 
   </section> 
-
+ -->
 
 
 
@@ -400,15 +405,20 @@
 
 
 
-
-
-<!-- 
+ 
 <div class="slider-container">
-  <h6 class="genre-heading" >Action</h6>
- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  
+ <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel ">
+ 
+
+   
+  
   <div class="carousel-inner">
+    <h6 class="genre-heading" >Action</h6>
     <div class="carousel-item active">
+      
       <div class="card-wrapper container-sm d-flex  justify-content-around">
+        
       <div class="card  " style="width: 29rem;">
   <img src="../../assets/movie1.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -530,11 +540,11 @@
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
   </button>
 </div>
  </div>
@@ -549,9 +559,10 @@
 
 
 <div class="slider-container">
-  <h6 class="genre-heading" >Comedy</h6>
- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  
+ <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+    <h6 class="genre-heading" >Comedy</h6>
     <div class="carousel-item active">
       <div class="card-wrapper container-sm d-flex  justify-content-around">
       <div class="card  " style="width: 29rem;">
@@ -673,11 +684,11 @@
 </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -691,9 +702,10 @@
 
 
 <div class="slider-container">
-  <h6 class="genre-heading" >Horror</h6>
- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  
+ <div id="carouselExampleControls3" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+    <h6 class="genre-heading" >Horror</h6>
     <div class="carousel-item active">
       <div class="card-wrapper container-sm d-flex  justify-content-around">
       <div class="card  " style="width: 31rem;">
@@ -815,19 +827,34 @@
 </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
  </div>
-</div> -->
+</div> 
 
 
+
+
+<footer class="footer">
+  
+  <p>Copyright© 2023 . All rights Reserved.</p>
+    
+</footer>
+
+
+
+
+
+
+
+  
   
 
 
@@ -839,37 +866,35 @@
 
 
 
+
+
+
+
   
-  
 
 
 
+<script>
+  $(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+  });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdownMenu = document.getElementById('dropdownMenuButton');
+    const searchInput = document.getElementById('search-input');
 
-
-
-
-
-
-
-
-
-
-  <script>
-    // Function to handle dropdown toggle
-    function handleDropdownToggle() {
-      const dropdownToggle = document.querySelector(".dropdown-toggle");
-      dropdownToggle.addEventListener("click", function () {
-        const dropdownMenu = document.querySelector(".dropdown-menu");
-        dropdownMenu.classList.toggle("show");
-      });
-    }
-
-    // Call the function after the DOM is loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      handleDropdownToggle();
+    document.getElementById('search-by-date').addEventListener('click', function() {
+      dropdownMenu.textContent = 'Date';
+      searchInput.setAttribute('placeholder', 'Search movie by Date');
     });
-  </script>
+
+    document.getElementById('search-by-name').addEventListener('click', function() {
+      dropdownMenu.textContent = 'Name';
+      searchInput.setAttribute('placeholder', 'Search movie by Name');
+    });
+  });
+</script>
+
 
 
 
