@@ -9,7 +9,7 @@
   </div> -->
   
    
-  <!-- <div class="application-name">SCREEN SPOT</div> -->
+  <div class="application-name">SCREEN SPOT</div>
 
  
   <!-- Search bar -->
@@ -25,7 +25,9 @@
       </div>
     </div>
     <input type="text" class="search-input" id="search-input" placeholder="Search movie by Name">
-    <i class="bi bi-search" style="color: white;"></i>
+    <button type="button" class="btn btn-primary search-button" id="search-button">
+      <i class="bi bi-search"></i>
+    </button>
   </div>
   <div >
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" routerLink="/login">Login</button>
@@ -158,10 +160,10 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../assets/image4.jpg" class="d-block w-100" alt="..." width="100" height="100">
+                <img src="../../assets/image7.jpg" class="d-block w-100" alt="..." width="100" height="100">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Guardians of the Galaxy Vol. 3</h5>
-                    <p>Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.</p>
+                    <h5>Frozen</h5>
+                    <p>Anna sets out on a journey with an iceman, Kristoff, and his reindeer, Sven, in order to find her sister, Elsa, who has the power to convert any object or person into ice.</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -179,11 +181,11 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../assets/image7.jpg" class="d-block w-100" alt="..." width="100" height="100">
+                <img src="../../assets/image4.jpg" class="d-block w-100" alt="..." width="100" height="100">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Fast X</h5>
-                    <p>Over many missions and against impossible odds, Dom Toretto and his family have outsmarted and outdriven every foe in their path. Now, they must confront the most lethal opponent they've ever faced.</p>
-                </div>
+                  <h5>Guardians of the Galaxy Vol. 3</h5>
+                  <p>Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.</p>
+              </div>
             </div>
             <div class="carousel-item">
                 <img src="../../assets/image8.jpg" class="d-block w-100" alt="..." width="100" height="100">
@@ -686,11 +688,11 @@
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
   </button>
 </div>
  </div>
@@ -829,11 +831,11 @@
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
   </button>
 </div>
  </div>
@@ -842,33 +844,34 @@
 
 
 
-<footer class="footer">
+
+
+
+
+
+
+
   
-  <p>Copyright© 2023 . All rights Reserved.</p>
-    
+  
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>Copyright© 2023. All rights Reserved.</p>
 </footer>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 
@@ -894,7 +897,6 @@
     });
   });
 </script>
-
 
 
 
