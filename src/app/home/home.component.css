@@ -220,9 +220,9 @@ margin-right: 30px;
 /* background-color: #000000; */
 /* padding-bottom: 100px; */
 /* display: flex; */
-margin-bottom: 20px;
+margin-bottom: 7px;
 
-max-height: 20px;
+height: 10px;
 
 }
 
@@ -317,6 +317,7 @@ h6 {
        font-size: 20px;
        padding-left: 110px;
        margin-top: 20px;
+       margin-bottom: 1px;
        
        
  }
@@ -389,7 +390,7 @@ h6 {
 .rating {
   display: flex;
   align-items: center;
-  padding-left: 45px;
+  padding-left: 57px;
  
 
 }
@@ -401,6 +402,7 @@ h6 {
 
 .checked {
   color: orange;
+  font-size: 24px;
 }
 
 

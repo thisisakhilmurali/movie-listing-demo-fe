@@ -33,89 +33,6 @@
 
 
 
-
-
-
-  
-
-<!----------------->
-<!-- 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#loginTab">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#signupTab">Sign Up</a>
-            </li>
-          </ul>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" routerLink="/home">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-  
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="loginTab">
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Enter password" required>
-                </div>
-                <span class="ml-auto"> <a href="#">Forgot password?</a></span>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="signupTab">
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="fullName">First Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="Enter first name" required>
-                </div>
-                <div class="form-group">
-                  <label for="fullName">Last Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="Enter last name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Enter password" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-   -->
-
-
-
-
-
-
-
-
-
-
   <!-- Carousel -->
   <div class="carousel-container">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -226,158 +143,71 @@
 
 
 
- 
+
+ <div class="slider-container">
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h6 class="genre-heading">Action</h6>
+      <div class="carousel-item" *ngFor="let movieGroup of actionmovieGroups; let i = index" [class.active]="i === 0">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <div class="card" *ngFor="let movie of movieGroup">
+            <img [src]="movie.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">{{ movie.title }}</h6>
+              <div class="rating">
+                <span class="rating-value">{{ movie.rating }}</span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
 <div class="slider-container">
-  
- <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel ">
- 
-
-   
-  
-  <div class="carousel-inner">
-    <h6 class="genre-heading" >Action</h6>
-    <div class="carousel-item active">
-      
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-        
-      <div class="card  " style="width: 29rem;">
-  <img src="../../assets/movie1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avengers</h6>
-    <div class="rating">
-      <span class="rating-value">8.8</span>
-      <span class="fa fa-star checked"></span>
-    </div>
-    
-  </div>
-</div>
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/movie2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Captain America</h6>
-    <div class="rating">
-      <span class="rating-value">8.5</span>
-      <span class="fa fa-star checked"></span>
-    </div>
-  </div>
-  </div>
-  <div class="card" style="width: 29rem;">
-  <img src="../../assets/movie3.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avatar</h6>
-    
-  </div>
-</div>
-<div class="card " style="width: 29rem;">
-  <img src="../../assets/movie4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Game of Thrones</h6>
-    
-  </div>
-</div>
-
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/movie5.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Mad Max : Fury Road </h6>
-    
-  </div>
-</div>
-</div>
-</div>
-
-
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex   justify-content-around">
-      <div class="card  " style="width: 18rem;">
-  <img src="../../assets/movie6.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">The Expendables 3</h6>
-    
-  </div>
-</div><div class="card" style="width: 18rem;">
-  <img src="../../assets/movie7.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Spider Man</h6>
-    
-  </div>
+  <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h6 class="genre-heading">Comedy</h6>
+      <div class="carousel-item" *ngFor="let movieGroup of comedymovieGroups; let i = index" [class.active]="i === 0">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <div class="card" *ngFor="let movie of movieGroup">
+            <img [src]="movie.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">{{ movie.title }}</h6>
+              <div class="rating">
+                <span class="rating-value">{{ movie.rating }}</span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movie8.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Thor</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/movie9.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/movie10.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
+      </div>
     </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card " style="width: 18rem;">
-  <img src="../../assets/movie11.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
+    </button>
   </div>
 </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movie12.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movie13.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/movie14.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/movie15.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
-  </button>
-</div>
- </div>
-</div>
-
 
 
 
@@ -387,285 +217,35 @@
 
 
 <div class="slider-container">
-  
- <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <h6 class="genre-heading" >Comedy</h6>
-    <div class="carousel-item active">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card  " style="width: 29rem;">
-  <img src="../../assets/movies1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avengers</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/movies2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Captain America</h6>
-    
-  </div>
-  </div>
-  <div class="card" style="width: 29rem;">
-  <img src="../../assets/movies3.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avatar</h6>
-    
-  </div>
-</div>
-<div class="card " style="width: 29rem;">
-  <img src="../../assets/movies4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Game of Thrones</h6>
-    
-  </div>
-</div>
-
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/movies5.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Mad Max : Fury Road </h6>
-    
-  </div>
-</div>
-</div>
-</div>
-
-
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex   justify-content-around">
-      <div class="card  " style="width: 18rem;">
-  <img src="../../assets/movies6.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">The Expendables 3</h6>
-    
-  </div>
-</div><div class="card" style="width: 18rem;">
-  <img src="../../assets/movies7.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Spider Man</h6>
-    
-  </div>
+  <div id="carouselExampleControls2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h6 class="genre-heading">Horror</h6>
+      <div class="carousel-item" *ngFor="let movieGroup of horrormovieGroups; let i = index" [class.active]="i === 0">
+        <div class="card-wrapper container-sm d-flex justify-content-around">
+          <div class="card" *ngFor="let movie of movieGroup">
+            <img [src]="movie.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">{{ movie.title }}</h6>
+              <div class="rating">
+                <span class="rating-value">{{ movie.rating }}</span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movies8.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Thor</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/movies9.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/movies10.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
+      </div>
     </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card " style="width: 18rem;">
-  <img src="../../assets/movies11.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movies12.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/movies13.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/movies14.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/movies15.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
-  </button>
-</div>
- </div>
-</div>
- 
-    
-
-
-
-
-<div class="slider-container">
-  
- <div id="carouselExampleControls3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <h6 class="genre-heading" >Horror</h6>
-    <div class="carousel-item active">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card  " style="width: 31rem;">
-  <img src="../../assets/moviess1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avengers</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/moviess2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Captain America</h6>
-    
-  </div>
-  </div>
-  <div class="card" style="width: 29rem;">
-  <img src="../../assets/moviess3.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Avatar</h6>
-    
-  </div>
-</div>
-<div class="card " style="width: 29rem;">
-  <img src="../../assets/moviess4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Game of Thrones</h6>
-    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
+    </button>
   </div>
 </div>
 
-<div class="card" style="width: 29rem;">
-  <img src="../../assets/moviess5.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Mad Max : Fury Road </h6>
-    
-  </div>
-</div>
-</div>
-</div>
-
-
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex   justify-content-around">
-      <div class="card  " style="width: 18rem;">
-  <img src="../../assets/moviess6.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">The Expendables 3</h6>
-    
-  </div>
-</div><div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess7.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Spider Man</h6>
-    
-  </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess8.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Thor</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/moviess9.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-
-<div class="card " style="width: 18rem;">
-  <img src="../../assets/moviess10.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-    </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card-wrapper container-sm d-flex  justify-content-around">
-      <div class="card " style="width: 18rem;">
-  <img src="../../assets/moviess11.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess12.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess13.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess14.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="../../assets/moviess15.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h6 class="card-title">Card title</h6>
-    
-  </div>
-</div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="arrow-icon"><i class="fa fa-angle-double-left"></i></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="arrow-icons"><i class="fa fa-angle-double-right"></i></span>
-  </button>
-</div>
- </div>
-</div> 
 
 
 
