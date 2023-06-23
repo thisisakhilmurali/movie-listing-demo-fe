@@ -10,6 +10,7 @@ import { UserMovieComponentComponent } from './user-movie-component/user-movie-c
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminMovieComponentComponent } from './admin-movie-component/admin-movie-component.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,10 +30,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
-    
-    
-   
+    RouterModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

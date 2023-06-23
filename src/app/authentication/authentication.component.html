@@ -1,67 +1,65 @@
-<!-- <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#loginTab">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#signupTab">Sign Up</a>
-            </li>
-          </ul>
-          <button type="button" class="close" data-dismiss="modal"aria-label="Close" routerLink="/home">
-            <span aria-hidden="true">&times;</span>
-            
-          </button>
-        </div>
-  
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="loginTab">
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Enter password" required>
-                </div>
-                <span class="ml-auto"> <a href="#">Forgot password?</a></span>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
-            </div>
+<body>
+<div class="form-container border border-light border-2 rounded-1" style="margin-top: 20px;margin-bottom: 20px;">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#loginTab">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#signupTab">Sign Up</a>
+   
+    <button type="button" class="close" aria-label="Close" (click)="redirectToHomePage()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </li>
+  </ul>
+
+  <div class="tab-content" style="border-color: blue; border-width: 4px;" >
+    <div class="tab-pane fade show active" id="loginTab">
+      <div class="form-body">
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
           </div>
-          <div class="tab-pane fade" id="signupTab">
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="fullName">First Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="Enter first name" required>
-                </div>
-                <div class="form-group">
-                  <label for="fullName">Last Name</label>
-                  <input type="text" class="form-control" id="fullNames" placeholder="Enter last name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="passwords" placeholder="Enter password" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-              </form>
-            </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
           </div>
-        </div>
+          <div class="form-group">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="signupTab">
+      <div class="form-body">
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  
+</div>
+</body>
 
-   -->

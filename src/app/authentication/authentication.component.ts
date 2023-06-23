@@ -8,4 +8,10 @@ import { Router } from '@angular/router';
 })
 export class AuthenticationComponent {
 
+
+  redirectToHomePage(): void {
+    window.location.href = "/home"; // Replace "/homepage" with the actual URL of your homepage
+  }
+
+
 }

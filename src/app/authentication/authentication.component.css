@@ -1,92 +1,62 @@
-/* .modal-content {
-    background-color: transparent;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c4c6cf, hsl(206, 40%, 33%));
+  /* background-image: url('../../assets/loginpage.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  
-  #loginModal {
-    margin-top: 70px; 
-  }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  #signupModal{
-    margin-top:70px ;
-  }
+  width: 400px;
 
+  /* background-color: aqua; */
 
-  
-.modal-header {
-    display: flex;
-    align-items: center;
-    color: #fff;
-  }
-
-
-  .modal-body{
-    color: #fff;
-   
-  }
-
-
-  .modal-body .form-control {
-    padding: 5px;
-  }
-
-  
-  .nav.nav-tabs {
-    flex: 1;
-  }
-  
-  .nav.nav-tabs .nav-item {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .nav.nav-tabs .nav-link {
-    width: 100%;
-  }
-  
-  .close {
-    margin-left: auto;
-    color: white;
-  }
-
-
-
-
+  /* border-radius: 100px; */
+  border-color: black ;
+  padding: 20px;
+ height:fit-content;
+ /* background-size: cover; */
  
+}
 
 
-  .login-button {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    margin-right: 10px;
-    transform: translateY(-50%);
-    border-radius:7px ;
-    
-    
-  }
+.close {
+  position: absolute;
+  margin-right: 10px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
 
-  button.btn-primary {
-    background-color: #666569; 
-    color: white;
-    border-color: #fff;
-  }
-
-
-
-
-
-
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
   
+}
 
+.nav-item {
+  flex-basis: 50%;
+  text-align: center;
+}
 
-  .modal-dialog {
-    max-width: 400px;
-    margin: 30px auto;
-    max-height: 20px;
-   
-  } */
+.form-body {
+  padding: 25px;
+  /* border: 20px black; */
+}
+
+/* Rest of your CSS styles... */
+.form-group{
+  width: 350px;
+  color: aliceblue;
+}
