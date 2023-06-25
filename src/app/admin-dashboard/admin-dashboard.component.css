@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav {
+  background-color:transparent;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+}
+
+.logo a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+} */
+
+/* .navbar li  {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Mukta', sans-serif;
+  font-size: medium;
+} */
+.section{
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px;
+}
+
+
+/* .navbar-dark .nav-item .nav-link  {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover  {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-family: 'Mukta', sans-serif;
+} */
+
+/* .fa-li {
+  position: relative;
+  left: 0;
+} */
+
+.container { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1cm;
+  
+}
+.movie-section{
+margin-top: 40px;
+margin-left: 30px;
+margin-right: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title{
+  
+color:white;
+}
+.card-body{
+  background-color: black;
+}
+.genre-heading {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+margin-left: 30px;
+margin-right: 30px;
+color: #fff;
+  
+  font-family: cursive;
+}
+
+.card{
+width: 200px;
+
+}
+
+/* .scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 0;
+}
+.next-button {
+  right: 0;
+} */
